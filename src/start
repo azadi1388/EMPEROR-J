@@ -1,0 +1,58 @@
+#!/bin/sh
+echo "######################################################################"
+echo "#                                                                    #"
+echo "#                             "EmperorTm"                              #"
+echo "#                                                                    #"
+echo "#     _____                                                          #"
+echo "#    |  ___                                        _____             #"
+echo "#    | |__   _ __ ___  _ __   ___ _ __ ___  _ __  |_   _|  __ ___    #"
+echo "#    |  __| |  _   _ \|  _ \ / _ \  __/ _ \|  __|   | |  |  _   _ \  #"
+echo "#    | |___ | | | | | | |_) |  __/ | | (_) | |      | |  | | | | | | #"
+echo "#    |_____ |_| |_| |_| .__/ \___|_|  \___/|_|      |_|  |_| |_| |_| #"
+echo "#                     | |                                            #"
+echo "#                                                                    #"
+echo "#                                                                    #"
+echo "######################################################################"
+HOST=$1
+BASEDIR=$2
+NUM=$3
+
+LIBPATH=/usr/local/StarterLibRCSC/lib
+if [ x"$LIBPATH" != x ]; then
+  if [ x"$LD_LIBRARY_PATH" = x ]; then
+    LD_LIBRARY_PATH=$LIBPATH
+  else
+    LD_LIBRARY_PATH=$LIBPATH:$LD_LIBRARY_PATH
+  fi
+  export LD_LIBRARY_PATH
+fi
+
+
+teamname="EMPEROR"
+
+
+player="./sample_player"
+coach="./sample_coach"
+
+config="./player.conf"
+coach_config="./coach.conf"
+
+opt="--player-config ${config}"
+opt="${opt} -h ${HOST} -t ${teamname}"
+
+coachopt="--coach-config ${coach_config} --use_team_graphic on"
+coachopt="${coachopt} -h ${HOST} -t ${teamname}"
+
+cd $BASEDIR
+
+case $NUM in
+    1)
+        $player $opt -g
+        ;;
+    12)
+        $coach $coachopt
+        ;;
+    *)
+        $player $opt
+        ;;
+esac
