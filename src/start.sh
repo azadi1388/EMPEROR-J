@@ -1,7 +1,7 @@
 #!/bin/sh
 echo "######################################################################"
 echo "#                                                                    #"
-echo "#                       Writen by "EmperorTm"                        #"
+echo "#                       Writen by "EmperorTM"                        #"
 echo "#                                                                    #"
 echo "#     _____                                                          #"
 echo "#    |  ___                                        _____             #"
