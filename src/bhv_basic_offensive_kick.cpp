@@ -1004,7 +1004,7 @@ rcsc::Vector2D Bhv_BasicOffensiveKick::Density(rcsc::PlayerAgent *agent,bool les
     
 }
 
-////tajavoz-mamnu
+
 bool Bhv_BasicOffensiveKick::pass_fazayy( rcsc::PlayerAgent* agent)
 {
     const WorldModel &wm = agent->world();
