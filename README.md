@@ -51,4 +51,10 @@ See `./configure --help` for others options.
 ## :book: References
 
 The paper about EMPEROR-J:
-- Erfan Fathi, Soroush Mazloom, Taha shahsavand, EMPEROR-J: 
+- Erfan Fathi , Soroush Mazloum , and Taha shahsavand: EMPEROR-J team
+
+
+
+##
+
+You can contact us at EmperorTmRCSS@gmail.com
