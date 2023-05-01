@@ -2194,15 +2194,6 @@ Vector2D Bhv_BasicMove::DeffenseFormation(rcsc::PlayerAgent *agent, int self_unu
     *5     *11
 
 
-
-
-
-    The only thing that is left is Coding...
-    Soroush: processing...
-    When you start Coding, you will realize you are stuck in the mud, like a Dunkey... "The word from Soroush in the end of his life"
-    Soroush Left His Life...
-    process Complete, Press Enter to Exit...
-
     */
 
     const WorldModel &wm = agent->world();
@@ -3722,13 +3713,6 @@ Vector2D Strategy::DefenseFormation(PlayerAgent *agent, int self_unum)
 
 
 
-
-
-    The only thing that is left is Coding...
-    Soroush: processing...
-    When you start Coding, you will realize you are stuck in the mud, like a Dunkey... "The word from Soroush in the end of his life"
-    Soroush Left His Life...
-    process Complete, Press Enter to Exit...
 
     */
 
