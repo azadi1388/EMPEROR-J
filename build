@@ -1,0 +1,4 @@
+#!/bin/bash
+echo "starting..."
+make -j4
+echo "Finished!"
