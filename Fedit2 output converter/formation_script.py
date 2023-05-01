@@ -1,4 +1,5 @@
-dir = '/home/taha/projects/soccer2d/binaries/atomicenergy/src/offense-formation_NEW.conf'
+dir = '/home/NAME/offense-formation_NEW.conf'
+# You have to change dir based on directory your formation is saved at.
 f = open(dir)
 lines = f.readlines()
 
