@@ -1,60 +1,93 @@
 # EMPEROR-J
-EMPEROR Junior team 
 
-![team_logo](https://user-images.githubusercontent.com/120306894/235450917-78fd61bf-3502-4868-b8bc-d5519304bca0.png)
+**Champion of the IranOpen 2D Simulated Football League**  
+**RoboCup Soccer Simulation 2D Team**
 
-![License](https://img.shields.io/github/license/ERFANFATHi-E/EMPEROR-J?color=blue&style=for-the-badge)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![RoboCup](https://img.shields.io/badge/RoboCup-Soccer%202D-green.svg)](https://www.robocup.org/)
 
-It is a team for the RoboCup Soccer 2D Simulator.
-All programs can work with rcssserver-16 or later.
+A competitive multi-agent team for the **RoboCup Soccer Simulation 2D League**.  
+Built with modern `librcsc` and C++, featuring advanced agent coordination, formation strategies, and real-time decision-making.
 
-- The RoboCup Soccer Simulator: http://github.com/rcsoccersim/
-- RoboCup Official Homepage: http://www.robocup.org/
+Compatible with **rcssserver-16** and later.
 
-## :soccer: Quick Start
------------------------
-The latest EMPEROR-J depends on the following libraries:
- - Boost 1.38 or later https://www.boost.org/
- - The latest librcsc https://github.com/helios-base/librcsc
+---
 
-In the case of Ubuntu 16.04 or later, execute the following commands for installing a basic development environment:
-```
+## 🏆 Achievements
+
+- Champion of the **IranOpen 2D Simulated Football League**
+- Participated and ranked in **RoboCup 2023** (2D Soccer Simulation)
+
+---
+
+## Features
+
+- Advanced multi-agent coordination and teamwork
+- Dynamic formation and strategy management
+- Optimized for competitive performance
+- Clean and maintainable C++ codebase based on librcsc
+
+---
+
+## Quick Start
+
+### Dependencies
+
+- Boost 1.38 or later → [boost.org](https://www.boost.org/)
+- Latest [librcsc](https://github.com/helios-base/librcsc)
+
+### Installation (Ubuntu 16.04+)
+
+```bash
 sudo apt update
 sudo apt install build-essential libboost-all-dev
 ```
-And, install librcsc.
 
-To build binaries, execute commands from the root of source directory:
-```
+Install librcsc, then from the project root:
+
+```bash
 ./bootstrap
 ./configure
 make
 ```
 
-To start the team, invoke the start script in `src` directory.
-```
+### Running the Team
+
+```bash
+cd src
 ./start.sh
 ```
 
-## :gear: Configuring
+---
 
-You may need to configure the build settings if you installed librcsc to an unusual location. 
-You can specify the installed location of librcsc by using `--with-librcsc` option as follows:
-```
+## Configuration
+
+If librcsc is installed in a non-standard location:
+
+```bash
 ./configure --with-librcsc=/path/to/librcsc
 ```
-Usually, this value is the same as `--prefix` option of configuring librcsc.
-You may also need to set the environment variable `LD_LIBRARY_PATH`.
 
-See `./configure --help` for others options.
+You may also need to set the `LD_LIBRARY_PATH` environment variable.
 
-## :book: References
+See `./configure --help` for more options.
 
-The paper about EMPEROR-J:
-- Erfan Fathi , Soroush Mazloum , and Taha shahsavand: EMPEROR-J team
+---
 
+## References
 
+- Erfan Fathi, Soroush Mazloum, and Taha Shahsavand: *EMPEROR-J Team*
 
-##
+---
 
-You can contact us at EmperorTmRCSS@gmail.com
+## Contact
+
+For questions or collaboration: **EmperorTmRCSS@gmail.com**
+
+---
+
+### Acknowledgments
+
+Part of the RoboCup community.  
+- Official RoboCup Soccer Simulator: [rcsoccersim](https://github.com/rcsoccersim)  
+- RoboCup Official Website: [robocup.org](https://www.robocup.org)
